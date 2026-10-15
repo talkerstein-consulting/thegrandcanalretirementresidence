@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /m/
+
+Sitemap: https://www.grandcanal.ca/sitemap.xml
