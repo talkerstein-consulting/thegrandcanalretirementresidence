@@ -75,6 +75,7 @@ body{padding-bottom:48px!important}
   <span class="gc-compare__toggle">
     <a href="/legacy"${active === 'legacy' ? ' aria-current="page"' : ''}>Legacy</a>
     <a href="/"${active === 'redesign' ? ' aria-current="page"' : ''}>Redesign</a>
+    <a href="https://grand-canal-v2.vercel.app/">V2</a>
   </span>
 </nav>
 `;
