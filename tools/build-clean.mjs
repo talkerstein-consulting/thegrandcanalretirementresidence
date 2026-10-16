@@ -75,7 +75,7 @@ body{padding-bottom:48px!important}
   <span class="gc-compare__toggle">
     <a href="/legacy"${active === 'legacy' ? ' aria-current="page"' : ''}>Legacy</a>
     <a href="/"${active === 'redesign' ? ' aria-current="page"' : ''}>Redesign</a>
-    <a href="https://grand-canal-v2.vercel.app/">V2</a>
+    <a href="/v2"${active === 'v2' ? ' aria-current="page"' : ''}>V2</a>
   </span>
 </nav>
 `;
@@ -90,6 +90,24 @@ for (const dir of ['', 'm']) {
   await emit(path.join(dir, 'legacy', 'index.html'), html);
   console.log(`kept legacy homepage at /${dir ? dir + '/' : ''}legacy`);
 }
+
+// V2 lives in its own Vercel project; frame it at /v2 so the review bar stays on screen.
+const v2Page = `<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Grand Canal Retirement Residence (V2)</title>
+<style>html,body{margin:0;height:100%;overflow:hidden}iframe{display:block;border:0;width:100%;height:calc(100% - 48px)}</style>
+</head>
+<body>
+<iframe src="https://grand-canal-v2.vercel.app/" title="Homepage V2"></iframe>
+${compareBar('v2')}
+</body>
+</html>
+`;
+for (const dir of ['', 'm']) await emit(path.join(dir, 'v2', 'index.html'), v2Page);
 
 const pages = (await fs.readdir(path.join(SRC, 'pages'))).filter((f) => f.endsWith('.html'));
 for (const file of pages) {

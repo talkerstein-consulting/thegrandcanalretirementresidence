@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Grand Canal Retirement Residence (V2)</title>
+<style>html,body{margin:0;height:100%;overflow:hidden}iframe{display:block;border:0;width:100%;height:calc(100% - 48px)}</style>
+</head>
+<body>
+<iframe src="https://grand-canal-v2.vercel.app/" title="Homepage V2"></iframe>
+
+<style id="gc-compare-style">
+.gc-compare{position:fixed;left:0;right:0;bottom:0;z-index:2147483000;height:48px;display:flex;align-items:center;justify-content:center;gap:16px;padding:0 16px;background:#000;color:#fff;font:600 15px/1 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.gc-compare__label{opacity:.75}
+.gc-compare__toggle{display:inline-flex;padding:3px;border-radius:999px;background:#2a2a2a}
+.gc-compare__toggle a{display:inline-flex;align-items:center;height:32px;padding:0 16px;border-radius:999px;color:#fff;text-decoration:none}
+.gc-compare__toggle a:hover{background:#3d3d3d;color:#fff}
+.gc-compare__toggle a[aria-current="page"]{background:#fff;color:#000}
+.gc-compare a:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+body{padding-bottom:48px!important}
+.stickycta{bottom:calc(48px + 1.5rem)!important}
+.gc-callfab{bottom:72px!important}
+@media (max-width:47.99em){.stickycta{bottom:48px!important}.gc-callfab{bottom:48px!important}body{padding-bottom:116px!important}.gc-compare__label{display:none}}
+</style>
+<nav class="gc-compare" aria-label="Homepage version">
+  <span class="gc-compare__label">Homepage version</span>
+  <span class="gc-compare__toggle">
+    <a href="/legacy">Legacy</a>
+    <a href="/">Redesign</a>
+    <a href="/v2" aria-current="page">V2</a>
+  </span>
+</nav>
+
+</body>
+</html>
