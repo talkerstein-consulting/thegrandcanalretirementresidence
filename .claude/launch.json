@@ -1,11 +1,6 @@
 {
   "version": "0.0.1",
   "configurations": [
-    {
-      "name": "site",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "4330", "--directory", "site"],
-      "port": 4330
-    }
+    { "name": "site", "runtimeExecutable": "node", "runtimeArgs": ["tools/serve.mjs", "4340"], "port": 4340 }
   ]
 }

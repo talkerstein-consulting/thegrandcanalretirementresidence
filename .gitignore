@@ -1,0 +1,5 @@
+node_modules/
+# Download cache, reference/local screenshots and reports are regenerable.
+# .cache/capture is kept: it is the frozen DOM the build reads.
+.cache/*
+!.cache/capture/

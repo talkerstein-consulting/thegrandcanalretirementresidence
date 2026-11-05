@@ -1,0 +1,105 @@
+[
+  {
+    "name": "Google Tag Manager",
+    "source": "wix-marketing-integration",
+    "position": "bodyStart",
+    "pages": null,
+    "html": "<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-MMM4KCZ\"\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->"
+  },
+  {
+    "name": "Google Tag Manager",
+    "source": "wix-marketing-integration",
+    "position": "head",
+    "pages": null,
+    "html": "<meta name=\"msvalidate.01\" content=\"6C213855B0C9FDA841EB1202EF7F76FB\" />\n\n<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-MMM4KCZ');</script>\n<!-- End Google Tag Manager -->\n\n"
+  },
+  {
+    "name": "Schema Codes",
+    "source": "wix-marketing-integration",
+    "position": "head",
+    "pages": null,
+    "html": "<script type=\"application/ld+json\">\n{\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Organization\",\n    \"name\": \"The Grand Canal Retirement Residence\",\n    \"url\": \"https://www.grandcanal.ca/\",\n    \"logo\": \"https://static.wixstatic.com/media/8965ae_272b9b0767644113a1bdede859dc2c8c~mv2.png/v1/fill/w_433,h_143,al_c,q_85,usm_0.66_1.00_0.01/Grand-Canal-Logo-(Blue-Blue).webp\",\n    \"contactPoint\": [\n        {\n            \"@type\": \"ContactPoint\",\n            \"telephone\": \"289-480-0125\",\n            \"contactType\": \"customer service\",\n            \"areaServed\": [\n                \"CA\"\n            ],\n            \"contactOption\": [\n                \"TollFree\"\n            ],\n            \"availableLanguage\": [\n                \"English\"\n            ]\n        }\n    ],\n    \"sameAs\": [\n        \"https://www.facebook.com/thegrandcanalretirementresidence\",\n        \"https://www.instagram.com/grandcanalretirement/\"\n    ]\n}\n</script>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"The Grand Canal Retirement Residence\",\n  \"image\": \"https://static.wixstatic.com/media/8965ae_272b9b0767644113a1bdede859dc2c8c~mv2.png/v1/fill/w_433,h_143,al_c,q_85,usm_0.66_1.00_0.01/Grand-Canal-Logo-(Blue-Blue).webp\",\n  \"@id\": \"\",\n  \"url\": \"https://www.grandcanal.ca/\",\n  \"telephone\": \"289-480-0125\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"439 King St\",\n    \"addressLocality\": \"Welland\",\n    \"addressRegion\": \"ON\",\n    \"postalCode\": \"L3B 0J5\",\n    \"addressCountry\": \"CA\"\n  } \n}\n</script>\n<script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n   \"@type\": \"BreadcrumbList\",\n    \"itemListElement\": [\n        {\n            \"@type\": \"ListItem\",\n            \"position\": 1,\n            \"item\": {\n                \"@id\": \"https://www.grandcanal.ca/\",\n                \"name\": \"Home\"\n            }\n        }\n    ]\n}</script>"
+  },
+  {
+    "name": "Custom",
+    "source": "wix-marketing-integration",
+    "position": "head",
+    "pages": [
+      "s7y4k"
+    ],
+    "html": " <!-- Event snippet for Submit lead form conversion page -->\n<script>\n  gtag('event', 'conversion', {'send_to': 'AW-358930201/KvhaCOvznsECEJmuk6sB'});\n</script>\n"
+  },
+  {
+    "name": "Conversion code",
+    "source": "wix-custom-code",
+    "position": "head",
+    "pages": [
+      "dywzt"
+    ],
+    "html": "<!-- Event snippet for Submit lead form 2022 conversion page -->\n<script>\n  gtag('event', 'conversion', {'send_to': 'AW-10777982505/XYR5CL2nq60DEKnsq5Mo'});\n</script>"
+  },
+  {
+    "name": "Google Site Verification",
+    "source": "wix-custom-code",
+    "position": "head",
+    "pages": null,
+    "html": "<meta name=\"google-site-verification\" content=\"Hl6F_g1bPbQPfupetna-8FJrv1ffP5cr61NlRUtRrls\" />"
+  },
+  {
+    "name": "Global Site Tag",
+    "source": "wix-custom-code",
+    "position": "head",
+    "pages": null,
+    "html": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TT2RXNJRKM\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-TT2RXNJRKM');\n</script>"
+  },
+  {
+    "name": "Chat Bot",
+    "source": "wix-custom-code",
+    "position": "bodyEnd",
+    "pages": [
+      "c1dmp"
+    ],
+    "html": "<div style=\"position: fixed;vertical-align:center;\" onclick=\"javascript:openNewWindow();\" id=\"chatbutton\" onmouseover=\"hover_button(this);\" onmouseout=\"unhover_button(this);\"></div><div id=\"slideDiv\" style=\"position: fixed;width:300px;\"></div><script type=\"text/javascript\">\n            var _owcss = _owcss || [];   \n            _owcss.push([\"site_url\", \"https://www.boomchatweb.com/\"]);\n            _owcss.push([\"client_id\", \"kHx+SlHyRdZk617kp2El8fLPSZ/CVJklCEaNrp2tjYA=\"]);\n            (function(){     \n            var owc = document.createElement(\"script\"); \n            owc.type = \"text/javascript\"; \n            owc.async = true;     \n            owc.src = ('https:'==document.location.protocol?'https://':'http://')+\"www.boomchatweb.com/chat/common_slide.js\";     \n            var s = document.getElementsByTagName(\"script\")[0]; \n            s.parentNode.insertBefore(owc, s);   })(); \n            </script><script type=\"text/javascript\" > var track = new Image(); track.src=('https:'==document.location.protocol?'https://':'http://')+\"www.boomchatweb.com/?page=track_visitor&client_id=kHx+SlHyRdZk617kp2El8fLPSZ/CVJklCEaNrp2tjYA=\"; </script>"
+  },
+  {
+    "name": "FAQ schema",
+    "source": "wix-custom-code",
+    "position": "bodyEnd",
+    "pages": [
+      "lxgk4"
+    ],
+    "html": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [{\n    \"@type\": \"Question\",\n    \"name\": \"Where Are You Located in Welland?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"We are located in the heart of the beautiful city of Welland along the lush banks of the Welland Recreational Waterway. The Grand Canal Retirement Residence has indoor access to the Welland Community Wellness Complex situated next door. All of our residents receive a complimentary pass to the wellness complex and can participate in their fitness rooms, learning classes, and social clubs.\nOur location is well-suited for nature lovers and walkers of all abilities! Enjoy water activities, walking and hiking trails, local shops, theatres, entertainment venues, and the on-site fitness facilities.\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"What Does Independent Supportive Living Mean?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"Independent supportive living refers to enjoying an independent lifestyle with the support of others when needed. Moving to retirement housing with housekeeping, laundry services, a full-staffed kitchen, and scheduled social activities is meant to help, not hinder.\nThe Grand Canal Retirement Residence offers independent living with a range of support services such as wellness programs, beauty salons, pet care services, and gourmet dining experiences, all under one roof. We focus on your lifestyle desires, needs, and requirements.\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"Do You Allow Pets?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"Yes. Here at The Grand Canal Retirement Residence, we understand the importance of the relationship between you and your pets. We have a wide arrangement of services focusing on your fur babies. Our animal-loving team offers dog walking services, pet feeding, and housekeeping for your pets. \nFor those times you are away or feeling under the weather, our team will be ready to take over and care for your fur baby until you are able.\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"What Type of Furniture Is Available with the Residences?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"Residents are required to bring all of their favourite furniture to their new home. Should you need assistance hanging pictures or unpacking, please let us know. We can provide furniture or related options based on one’s needs. We have a number of furniture packages available for purchase at a discounted rate through a supplier should you require a certain piece of furniture or simply love something you’ve spotted in our model suites. All of our suites have fitted blinds on the windows. \nFor temporary stays, hotel stays and respite stays, we provide fully furnished suites. Should you like a “trial stay”, a furnished suite can be provided.\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"What Appliances Can I Bring?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"All major appliances are supplied in the suite or within the building for your convenience, including a kitchenette with a full-size refrigerator and microwave, as well as an in-suite air conditioner and heating unit. Contact our friendly team to discuss any concerns you might have regarding the appliances needed or allowed in your suite.\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"Do You Offer Short-Term Stays?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"The Grand Canal Retirement Residence is intended to be your home for as long as you want or require. Speak with one of our knowledgeable team members to discuss how our residence can help you transition to retirement living.\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"Do You Have Guest Suites?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"Our suites are available for family/friends of permanent residents on a first-come, first-served accommodation. Depending on availability, we may be able to offer a room for guests if the resident’s suite does not have suitable space.\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"Is There Staff on Duty at All Times?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"Please know The Grand Canal Retirement Residence has skilled and qualified team members around the clock to help all residents with any needs or emergencies. The building is staffed 24/7 with registered personnel, meaning our residence is structured to have independent living with a live-in bonus of having professionals should you need them.\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"Is the Retirement Residence Secure?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"Our retirement residence provides adequate lighting inside and out along with secured and private access. In addition to regular team members, we offer staffing who do building rounds, seven days a week. For extra protection, we offer room checks by our professional team members if required.\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"Do You Provide Diet Plans for Seniors?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"As one of the new retirement homes in Welland, Ontario, The Grand Canal Retirement Residence puts the health and desires of residents first! Our highly trained chef and kitchen staff prepare all meals on our restaurant-style menu with fresh nutritious ingredients. Dine like kings and queens and choose culinary option based on your personal dietary and taste! The options are endless!\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"When Can My Family and Friends Visit?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"Our home is your home! Moving into The Grand Canal Retirement Residence shouldn’t change your favourite pastime of hosting family and friends. Our building has adequate banquet rooms for those special large gatherings. And our café has a delectable assortment of snacks available at anytime! Catch-up over a cup of tea in your suite, or over a glass of wine in our lounge!\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"Can I Go Out Anytime I Want?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"Changing addresses only provides more opportunity to meet new friends and have more experiences! In our secure setting, residents are able to live life to the fullest and come and go as they please. Every team member at The Grand Canal Retirement Residence believes ageing is an adventure! We want to support you while you live life with a purpose! Our team members are here for you as you begin this new chapter in your life!\"\n    }\n  },{\n    \"@type\": \"Question\",\n    \"name\": \"Will There Be an Additional Cost to Bring My Car?\",\n    \"acceptedAnswer\": {\n      \"@type\": \"Answer\",\n      \"text\": \"Please contact our knowledgeable reception team members to discuss any concerns with use of the available parking spaces for our residents. It should be noted that we provide free transportation for our residents so they can participate in the many events hosted by local recreation and entertainment venues.\"\n    }\n  }]\n}\n</script>\n"
+  },
+  {
+    "name": "What Converts",
+    "source": "wix-custom-code",
+    "position": "head",
+    "pages": null,
+    "html": "<script src=\"//scripts.iconnode.com/98206.js\"></script>\n<script type=\"text/javascript\"> setTimeout(function(){ djteiyewvcuvyogyifuj(); }, 5000); </script>"
+  },
+  {
+    "name": "Clickcease",
+    "source": "wix-custom-code",
+    "position": "head",
+    "pages": null,
+    "html": "<!--  Clickcease.com tracking-->\n      <script type='text/javascript'>var script = document.createElement('script');\n      script.async = true; script.type = 'text/javascript';\n      var target = 'https://www.clickcease.com/monitor/stat.js';\n      script.src = target;var elem = document.head;elem.appendChild(script);\n      </script>\n      <noscript>\n      <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>\n      </noscript>\n      <!--  Clickcease.com tracking-->\n"
+  },
+  {
+    "name": "Whatconverts drop down",
+    "source": "wix-custom-code",
+    "position": "head",
+    "pages": null,
+    "html": "<script type=\"text/javascript\"> \nfunction wc_track() {\nvar el = document.querySelector(\"#comp-kue57w8l > label\");\nel.innerText = \"Desired Type\";\n}\nsetTimeout(function(){ wc_track(); }, 2000);\n</script>\n"
+  },
+  {
+    "name": "Crazy Egg",
+    "source": "wix-custom-code",
+    "position": "head",
+    "pages": [
+      "dywzt",
+      "ccf5d",
+      "khh30"
+    ],
+    "html": "<script type=\"text/javascript\" src=\"//script.crazyegg.com/pages/scripts/0114/3239.js\" async=\"async\" ></script>"
+  }
+]

@@ -1,0 +1,64 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/img/grand-canal-logo-blue-blue-f9ff60a1.webp" alt="The Grand Canal Retirement Residence" width="416" height="96" loading="lazy">
+      <address style="font-style:normal">439 King Street<br>Welland, ON L3B 0J5<br>Canada</address>
+      <div class="social">
+        <a href="https://www.instagram.com/grandcanalretirement/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 4.8a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+        <a href="https://www.facebook.com/thegrandcanalretirementresidence" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V22h3.4z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="{{tel}}">{{phone}}</a></li>
+        <li><a href="#tour" data-intake>Book a tour</a></li>
+        <li><a href="/review">Review us on Google</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="/floor-plans">Suites</a></li>
+        <li><a href="/amenities">Amenities</a></li>
+        <li><a href="/dining-services">Dining</a></li>
+        <li><a href="/care">Care</a></li>
+        <li><a href="/blogs">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Join our team</h2>
+      <p>The Grand Canal is looking for qualified and passionate people. If customer service and meaningful work matter to you, email Terri at <a href="mailto:tmcbean@grandcanal.ca">tmcbean@grandcanal.ca</a>.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2024 The Grand Canal Retirement Residence. All rights reserved.</p>
+    <p><a href="/sitemap">Sitemap</a></p>
+  </div>
+</footer>
+<div class="stickycta">
+  <a class="btn" href="#tour" data-intake>Book a Tour</a>
+  <a class="btn btn--ghost stickycta__call" href="{{tel}}" aria-label="Call {{phone}}">{{phoneIcon}}<span>Call</span></a>
+</div>
+<div class="modal" id="intake" hidden role="dialog" aria-modal="true" aria-labelledby="intake-title">
+  <div class="modal__box card stack-lg">
+    <button class="modal__close" type="button" aria-label="Close">&times;</button>
+    <div class="stack">
+      <h2 class="t-h2" id="intake-title">Book your tour</h2>
+      <p>See the suites, meet the team and stay for lunch on the Welland Canal. Tell us when suits you and we'll confirm your visit.</p>
+    </div>
+    <form class="form" novalidate>
+      <div class="field"><label for="i-name">Name</label><input id="i-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="i-phone">Phone</label><input id="i-phone" name="phone" type="tel" autocomplete="tel" required></div>
+      <div class="field field--full"><label for="i-email">Email</label><input id="i-email" name="email" type="email" autocomplete="email"></div>
+      <div class="field"><label for="i-for">Enquiring for</label><select id="i-for" name="for"><option>Myself</option><option>A parent</option><option>A spouse</option><option>Someone else</option></select></div>
+      <div class="field"><label for="i-when">Move-in timeline</label><select id="i-when" name="timeline"><option>As soon as possible</option><option>1&ndash;3 months</option><option>3&ndash;6 months</option><option>Just exploring</option></select></div>
+      <div class="field"><label for="i-suite">Suite type</label><select id="i-suite" name="suite"><option>Not sure yet</option><option>Studio</option><option>1 Bedroom</option><option>1 Bedroom + Den</option><option>2 Bedroom</option></select></div>
+      <div class="field"><label for="i-date">Preferred tour date</label><input id="i-date" name="date" type="date"></div>
+      <div class="field field--full"><label for="i-msg">Anything we should know?</label><textarea id="i-msg" name="message"></textarea></div>
+      <div class="actions"><button class="btn" type="submit">Book my tour</button></div>
+    </form>
+    <p class="or">or book by phone</p>
+    <a class="btn btn--ghost" href="{{tel}}">{{phoneIcon}}<span>Call <span class="nowrap">{{phone}}</span></span></a>
+  </div>
+</div>

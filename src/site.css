@@ -1,0 +1,118 @@
+/* Additions to the captured Wix CSS. Keep this tiny: nothing here may change how the
+   original design looks; it only supports behaviour the Wix runtime used to provide. */
+
+/* Phone numbers linked by the build look exactly like the surrounding text. */
+a.gc-tel{color:inherit;text-decoration:inherit;font:inherit;cursor:pointer}
+
+/* Full-width pro galleries were laid out for the capture viewport; keep them inside the window. */
+[data-hook="gallery-column"].gallery-horizontal-scroll{max-width:100%;overflow-x:auto;scroll-behavior:smooth}
+.pro-gallery-parent-container:has(>.pro-gallery.slider){width:calc(100% + 5px)!important}
+.pro-gallery.inline-styles.slider,.pro-gallery.slider>[data-hook="gallery-column"]{width:100%!important}
+
+/* reCAPTCHA was part of the Wix runtime; its placeholder keeps its space but shows nothing. */
+[class*="Captcha"][class*="__root"]{visibility:hidden!important}
+
+/* Gallery viewer, matching the Wix pro-gallery "expand" screen. */
+.gc-viewer{position:fixed;inset:0;z-index:100000;background:#f0f0f0;display:flex;font-family:proxima-n-w01-reg,sans-serif;color:#303030}
+.gc-viewer[hidden]{display:none}
+.gc-viewer__stage{position:relative;flex:1 1 auto;display:flex;align-items:center;justify-content:center;padding:90px 90px}
+.gc-viewer__stage img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.gc-viewer__side{flex:0 0 30%;max-width:380px;padding:130px 60px 0 20px;box-sizing:border-box}
+.gc-viewer__title{font:28px/1.4 proxima-n-w01-reg,sans-serif;margin:0;color:#303030;font-weight:400}
+.gc-viewer button{background:none;border:0;padding:0;cursor:pointer;color:#303030;position:absolute}
+.gc-viewer__close{top:30px;right:30px;width:38px;height:44px}
+.gc-viewer__full{top:26px;left:35px;width:38px;height:44px}
+.gc-viewer__prev,.gc-viewer__next{top:calc(50% - 25px);width:50px;height:50px}
+.gc-viewer__prev{left:20px}.gc-viewer__next{right:20px}
+.gc-viewer svg{display:block;margin:auto}
+@media (max-width:767px){.gc-viewer{flex-direction:column}.gc-viewer__stage{padding:70px 10px 10px}.gc-viewer__side{flex:0 0 auto;max-width:none;padding:10px 20px 30px}.gc-viewer__title{font-size:20px}.gc-viewer__prev{left:0}.gc-viewer__next{right:0}}
+
+/* Message shown when the lead form is submitted on a copy without a form backend. */
+.gc-form-note{font:14px/1.4 Arial,sans-serif;color:#3366a1;text-align:center;padding:6px 0}
+
+/* ================================================================ conversion pass
+   Call Now as the primary CTA, a tour/intake popup, one type scale (site.js) and one
+   button style. The CTA blue is the logo's bright blue (#0098c8). White on it is 3.3:1,
+   which passes WCAG AA for large text only, so button labels are 19px bold (large text).
+   Hover --gc-blue-dark is 5.2:1 with white; white on --gc-navy is 8.1:1. */
+:root{--gc-navy:#3f516f;--gc-navy-dark:#26344b;--gc-blue:#0098c8;--gc-blue-dark:#00739a;--gc-tint:#e3e9f1;--gc-radius:10px;--gc-font:proxima-n-w01-reg,"Helvetica Neue",Arial,sans-serif}
+
+/* One CTA: every Wix button keeps its original slot (so nothing moves), drops the
+   arrow/shape layers, and is drawn 48px tall, centred in the slot, with semi-rounded corners. */
+[id^="comp-"]:has(>.wixui-button){display:flex!important;align-items:center;justify-content:center;overflow:visible!important;background:none!important;border:0!important;box-shadow:none!important}
+[id^="comp-"]:has(>.wixui-button)>div{display:none!important}
+.wixui-button{position:relative!important;inset:auto!important;width:auto!important;min-width:0;height:48px!important;min-height:48px;padding:0 20px!important;box-sizing:border-box;display:flex!important;align-items:center;justify-content:center;background:var(--gc-blue)!important;border:2px solid var(--gc-blue)!important;border-radius:var(--gc-radius)!important;box-shadow:none!important;clip-path:none!important;text-decoration:none!important;transition:background-color .15s,border-color .15s,color .15s}
+.wixui-button,.wixui-button *{color:#fff!important;font:700 19px/1 var(--gc-font)!important;letter-spacing:.04em!important;text-transform:uppercase!important;white-space:nowrap}
+.wixui-button:hover{background:var(--gc-blue-dark)!important;border-color:var(--gc-blue-dark)!important}
+.wixui-button *{transform:none!important;margin:0!important;padding:0!important;position:static!important;width:auto!important;max-width:none!important;height:auto!important;overflow:visible!important;text-overflow:clip!important}
+.wixui-button{flex:none!important;padding:0 28px!important;overflow:visible!important}
+.wixui-button.gc-cta-tour,form .wixui-button{background:var(--gc-blue)!important;border-color:var(--gc-blue)!important}
+.wixui-button.gc-cta-tour:hover,form .wixui-button:hover{background:var(--gc-blue-dark)!important;border-color:var(--gc-blue-dark)!important}
+/* Visible keyboard focus everywhere (3:1 against light and dark backgrounds). */
+.wixui-button:focus-visible,.gc-callbtn:focus-visible,.gc-callfab:focus-visible,.gc-intake a:focus-visible,.gc-intake button:focus-visible{outline:3px solid #f2b705!important;outline-offset:3px}
+
+/* Primary CTA: Call Now. Header phone becomes the button; a floating button follows the page. */
+a.gc-tel.gc-callbtn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gc-blue)!important;border:2px solid var(--gc-blue)!important;color:#fff!important;border-radius:var(--gc-radius);padding:0 24px;height:48px;box-sizing:border-box;font:700 19px/1 var(--gc-font)!important;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;transition:background-color .15s}
+a.gc-tel.gc-callbtn:hover{background:var(--gc-blue-dark)!important;border-color:var(--gc-blue-dark)!important}
+.gc-callfab{position:fixed;right:24px;bottom:24px;z-index:9999;display:flex;align-items:center;gap:10px;background:var(--gc-blue);color:#fff;text-decoration:none;border-radius:var(--gc-radius);padding:0 26px;height:58px;font:700 19px/1 var(--gc-font);letter-spacing:.06em;text-transform:uppercase;box-shadow:0 8px 24px rgba(0,40,70,.3);transition:background-color .15s}
+.gc-callfab:hover{background:var(--gc-blue-dark)}
+.gc-callfab small{font-weight:700;letter-spacing:.02em;text-transform:none;font-size:19px}
+.gc-callfab svg,.gc-callbtn svg,.gc-intake svg{width:20px;height:20px;flex:none}
+@media (max-width:767px){
+  .gc-callfab{left:0;right:0;bottom:0;border-radius:0;justify-content:center;height:60px;padding-bottom:env(safe-area-inset-bottom)}
+  body{padding-bottom:60px}
+  a.gc-tel.gc-callbtn{height:44px}
+}
+
+/* Intake popup. */
+.gc-intake{position:fixed;inset:0;z-index:100001;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(20,30,45,.6)}
+.gc-intake[hidden]{display:none}
+.gc-intake__box{position:relative;background:#fff;color:#2b3442;width:100%;max-width:520px;max-height:calc(100vh - 32px);overflow:auto;border-radius:var(--gc-radius);padding:36px 32px 28px;box-sizing:border-box;font:16px/1.5 var(--gc-font);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.gc-intake__close{position:absolute;top:10px;right:12px;width:40px;height:40px;border:0;border-radius:var(--gc-radius);background:none;font-size:28px;line-height:1;color:#444;cursor:pointer}
+.gc-intake__close:hover{background:var(--gc-tint);color:#111}
+.gc-intake h2{margin:0 0 6px;font:400 33px/1.15 var(--gc-font);color:var(--gc-navy)}
+.gc-intake p{margin:0 0 20px;font-size:16px}
+.gc-intake__call{display:flex;justify-content:center;align-items:center;gap:10px;background:var(--gc-blue);color:#fff;text-decoration:none;border-radius:var(--gc-radius);height:48px;font:700 19px/1 var(--gc-font);letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px;transition:background-color .15s}
+.gc-intake__call:hover{background:var(--gc-blue-dark)}
+.gc-intake__or{text-align:center;font-size:14px;color:#5b6472;margin:0 0 14px;text-transform:uppercase;letter-spacing:.1em}
+.gc-intake form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gc-intake label{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:600}
+.gc-intake label.gc-full{grid-column:1/-1}
+.gc-intake input,.gc-intake select,.gc-intake textarea{font:16px/1.4 var(--gc-font);padding:10px 12px;border:1px solid #8a94a3;border-radius:var(--gc-radius);color:#2b3442;background:#fff;width:100%;box-sizing:border-box}
+.gc-intake textarea{min-height:80px;resize:vertical}
+.gc-intake input:focus,.gc-intake select:focus,.gc-intake textarea:focus{outline:3px solid var(--gc-blue);outline-offset:1px;border-color:var(--gc-blue)}
+.gc-intake button[type=submit]{grid-column:1/-1;height:48px;border:0;border-radius:var(--gc-radius);background:var(--gc-blue);color:#fff;font:700 19px/1 var(--gc-font);letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:background-color .15s}
+.gc-intake button[type=submit]:hover{background:var(--gc-blue-dark)}
+.gc-intake .gc-form-note{grid-column:1/-1}
+@media (max-width:480px){.gc-intake form{grid-template-columns:1fr}.gc-intake__box{padding:32px 20px 22px}.gc-intake h2{font-size:28px}}
+
+/* One font family everywhere (footer, forms, widgets included). */
+body,body :not(svg):not(svg *):not(.gc-viewer *){font-family:var(--gc-font)!important}
+.wixui-button::before,.wixui-button::after,.wixui-button *::before,.wixui-button *::after{display:none!important}
+
+/* Footer: replace Wix's pixel-pinned grid with a centred two-column layout on an 8px rhythm. */
+html[data-gc-layout="desktop"] [data-mesh-id="SITE_FOOTERinlineContent-gridContainer"]{display:grid!important;grid-template-columns:1fr 1fr!important;grid-template-rows:none!important;grid-auto-rows:auto!important;column-gap:48px!important;row-gap:32px!important;max-width:1040px;margin:0 auto!important;padding:64px 24px 32px!important;box-sizing:border-box;justify-items:center}
+html[data-gc-layout="desktop"] [data-mesh-id="SITE_FOOTERinlineContent-gridContainer"]>*{grid-area:auto!important;margin:0!important;left:0!important;top:0!important;position:relative!important}
+html[data-gc-layout="desktop"] #comp-lfjxntqc,html[data-gc-layout="desktop"] #comp-kzpqvsao,html[data-gc-layout="desktop"] #comp-jzoqpf8o{grid-column:1/-1!important}
+html[data-gc-layout="desktop"] #comp-lfjxntqc{width:100%!important;max-width:1040px}
+html[data-gc-layout="desktop"] #comp-lfjuo26b{justify-self:end!important}
+html[data-gc-layout="desktop"] #comp-l1q79u5o{justify-self:start!important}
+html[data-gc-layout="desktop"] #comp-kfo8vamp,html[data-gc-layout="desktop"] #comp-jzoqmbg2{width:100%!important;max-width:420px;height:auto!important}
+html[data-gc-layout="desktop"] #comp-kfo8vamp{justify-self:end!important}
+html[data-gc-layout="desktop"] #comp-jzoqmbg2{justify-self:start!important}
+html[data-gc-layout="desktop"] #comp-kfo8vamp *,html[data-gc-layout="desktop"] #comp-jzoqmbg2 *{line-height:1.6!important}
+html[data-gc-layout="desktop"] #comp-jzoqpf8o{width:100%!important;padding-top:24px!important;border-top:1px solid rgba(255,255,255,.2);text-align:center}
+@media (max-width:900px){html[data-gc-layout="desktop"] [data-mesh-id="SITE_FOOTERinlineContent-gridContainer"]{grid-template-columns:1fr!important}html[data-gc-layout="desktop"] #comp-lfjuo26b,html[data-gc-layout="desktop"] #comp-l1q79u5o,html[data-gc-layout="desktop"] #comp-kfo8vamp,html[data-gc-layout="desktop"] #comp-jzoqmbg2{justify-self:center!important}}
+/* Footer form panel: Wix drew it 1420px wide with the fields in the middle; fit it to the
+   footer column and keep the fields centred inside it. */
+html[data-gc-layout="desktop"] #comp-lfjxntte{width:100%!important;overflow:hidden!important;border-radius:var(--gc-radius)}
+html[data-gc-layout="desktop"] #comp-lfjxntte>[data-mesh-id="comp-lfjxntteinlineContent"]{width:1420px!important;margin-left:calc((100% - 1436px)/2)!important}
+html[data-gc-layout="desktop"] #comp-kzpqvsao{justify-self:center!important}
+html[data-gc-layout="desktop"] #comp-jzoqpf8o,html[data-gc-layout="desktop"] #comp-jzoqpf8o *{text-align:center!important}
+html[data-gc-layout="desktop"] #comp-jzoqpf8o p{justify-content:center}
+html[data-gc-layout="desktop"] #comp-lfjxntqc>div,html[data-gc-layout="desktop"] #comp-lfjxntqc [data-mesh-id="comp-lfjxntqcinlineContent-gridContainer"]{width:100%!important}
+html[data-gc-layout="desktop"] #comp-lfjxntqc [data-mesh-id="comp-lfjxntqcinlineContent-gridContainer"]>*{margin-left:0!important;left:0!important}
+
+/* Long labels wrap inside the screen instead of running off it. */
+.wixui-button{max-width:calc(100vw - 32px)!important;height:auto!important;padding:12px 24px!important}
+.wixui-button,.wixui-button *{white-space:normal!important;text-align:center!important;line-height:1.2!important}
