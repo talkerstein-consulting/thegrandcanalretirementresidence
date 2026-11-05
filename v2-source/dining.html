@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dining | The Grand Canal Retirement Residence</title>
+<meta name="description" content="Restaurant-style lunch and dinner in a dining room overlooking the canal, with a seasonal sample menu and patio dining in summer.">
+<link rel="canonical" href="https://grand-canal.vercel.app/dining">
+<!-- Concept mockup: keep it out of search so it cannot compete with the live
+     site. Delete this one line when the real site goes live. -->
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0B2650">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Grand Canal Retirement Residence">
+<meta property="og:locale" content="en_CA">
+<meta property="og:url" content="https://grand-canal.vercel.app/dining">
+<meta property="og:title" content="Dining | The Grand Canal Retirement Residence">
+<meta property="og:description" content="Restaurant-style lunch and dinner in a dining room overlooking the canal, with a seasonal sample menu and patio dining in summer.">
+<meta property="og:image" content="https://grand-canal.vercel.app/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The waterside patio at The Grand Canal, overlooking the Welland Canal">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dining | The Grand Canal Retirement Residence">
+<meta name="twitter:description" content="Restaurant-style lunch and dinner in a dining room overlooking the canal, with a seasonal sample menu and patio dining in summer.">
+<meta name="twitter:image" content="https://grand-canal.vercel.app/assets/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://grand-canal.vercel.app/#residence",
+      "name": "The Grand Canal Retirement Residence",
+      "description": "Independent retirement living on the canal in Welland, Ontario.",
+      "url": "https://grand-canal.vercel.app/",
+      "telephone": "+1-289-480-0125",
+      "image": "https://grand-canal.vercel.app/assets/og-image.jpg",
+      "logo": "https://grand-canal.vercel.app/assets/favicon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "439 King Street",
+        "addressLocality": "Welland",
+        "addressRegion": "ON",
+        "postalCode": "L3B 0J5",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.9819,
+        "longitude": -79.2534
+      },
+      "sameAs": [
+        "https://www.instagram.com/grandcanalretirement/",
+        "https://www.facebook.com/thegrandcanalretirementresidence"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00",
+          "description": "Tour hours"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://grand-canal.vercel.app/#website",
+      "url": "https://grand-canal.vercel.app/",
+      "name": "The Grand Canal Retirement Residence",
+      "publisher": {
+        "@id": "https://grand-canal.vercel.app/#residence"
+      },
+      "inLanguage": "en-CA"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://grand-canal.vercel.app/dining#webpage",
+      "url": "https://grand-canal.vercel.app/dining",
+      "name": "Dining | The Grand Canal Retirement Residence",
+      "description": "Restaurant-style lunch and dinner in a dining room overlooking the canal, with a seasonal sample menu and patio dining in summer.",
+      "isPartOf": {
+        "@id": "https://grand-canal.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://grand-canal.vercel.app/#residence"
+      },
+      "primaryImageOfPage": "https://grand-canal.vercel.app/assets/og-image.jpg",
+      "inLanguage": "en-CA"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://grand-canal.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dining",
+          "item": "https://grand-canal.vercel.app/dining"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FCF8F2; color: #33291F; font-family: 'Nunito Sans', system-ui, sans-serif; font-size: 21px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: #10366F; text-decoration: none; }
+  a:hover { color: #9C4A2E; }
+  h1, h2, h3, h4, blockquote, p { margin: 0; }
+  ul { margin: 0; padding: 0; list-style: none; }
+  input, select, textarea, button { font: inherit; color: inherit; }
+  :focus-visible { outline: 4px solid #9C4A2E; outline-offset: 3px; border-radius: 4px; }
+  .gc-prose a { text-decoration: underline; text-underline-offset: 4px; }
+  .gc-sec { padding: 104px 40px; }
+  .gc-wrap { max-width: 1280px; margin: 0 auto; }
+  .gc-logo { animation: gcFloat 5.5s ease-in-out infinite; }
+  .gc-logo:hover { animation-play-state: paused; }
+  @keyframes gcFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+  @media (max-width: 900px) {
+    /* the header is fixed, so keep it short enough to leave the page usable */
+    .gc-hdr-top { grid-template-columns: auto 1fr auto !important; gap: 10px !important; padding: 8px 14px !important; }
+    .gc-logo { height: 52px !important; }
+    .gc-phone-txt { display: none !important; }
+    .gc-phone { gap: 0 !important; padding: 0 !important; }
+    .gc-cta { padding: 13px 16px !important; font-size: 18px !important; white-space: nowrap !important; }
+    .gc-nav { padding: 0 8px !important; }
+    .gc-nav a { padding: 11px 13px !important; }
+  }
+  @media (max-width: 960px) {
+    .gc-2col { grid-template-columns: minmax(0, 1fr) !important; gap: 46px !important; }
+    .gc-2col > * { min-width: 0; }
+    .gc-list2 { grid-template-columns: minmax(0, 1fr) !important; column-gap: 0 !important; }
+    .gc-sec { padding: 68px 22px !important; }
+    .gc-hide-sm { display: none !important; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</helmet>
+
+<div style="width: 100%;">
+
+  <dc-import name="SiteHeader" hint-size="100%,180px"></dc-import>
+
+  <section style="position: relative; min-height: 420px; display: flex; align-items: flex-end; overflow: hidden;">
+    <img src="https://static.wixstatic.com/media/1a057101cb0e4749b31e7c2ee5d806ed.jpg/v1/fill/w_2200,h_1100,al_c,q_88/Restaurant%20Table.jpg" alt="A table set in the dining room overlooking the canal" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,38,80,0.50) 0%, rgba(20,11,6,0.86) 100%);"></div>
+    <div style="position: relative; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 40px 60px;">
+      <span style="display: inline-block; font-size: 19px; font-weight: 800; letter-spacing: 0.08em; color: #FBE3BF; background: rgba(11,38,80,0.55); padding: 10px 18px; border-radius: 999px;">DINING</span>
+      <h1 style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: clamp(46px, 5.4vw, 76px); line-height: 1.05; color: #FFFDF9; margin-top: 22px; text-wrap: balance;">Restaurant-style dining</h1>
+      <p style="margin-top: 20px; max-width: 640px; font-size: 24px; line-height: 1.5; color: #FFF6E9; font-weight: 500;">Restaurant-style lunch and dinner, and a continental breakfast each morning.</p>
+    </div>
+  </section>
+
+  <section data-reveal="1" class="gc-sec" style="background: #FCF8F2;">
+    <div class="gc-wrap gc-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 76px; align-items: center;">
+      <div>
+        <span style="display: block; font-size: 19px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #9C4A2E;">The dining room</span>
+        <h2 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(38px, 4.2vw, 58px); line-height: 1.08; margin-top: 16px; color: #17263D; text-wrap: balance;">A dining room overlooking the canal</h2>
+        <p style="margin-top: 22px; font-size: 24px; line-height: 1.55; color: #443A30; text-wrap: pretty;">Full restaurant service at lunch and dinner, with bar service at every meal.</p>
+
+        <ul style="display: grid; gap: 0; margin-top: 34px;">
+          <li style="display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; border-top: 2px solid #E5D8C4; font-size: 21px; line-height: 1.45;"><span><strong>Breakfast</strong></span><strong style="color: #10366F; white-space: nowrap;">7:30 to 9:30</strong></li>
+          <li style="display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; border-top: 2px solid #E5D8C4; font-size: 21px; line-height: 1.45;"><span><strong>Lunch</strong></span><strong style="color: #10366F; white-space: nowrap;">11:45 to 1:15</strong></li>
+          <li style="display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; border-top: 2px solid #E5D8C4; font-size: 21px; line-height: 1.45;"><span><strong>Dinner</strong></span><strong style="color: #10366F; white-space: nowrap;">4:45 to 6:15</strong></li>
+          <li style="display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; border-top: 2px solid #E5D8C4; border-bottom: 2px solid #E5D8C4; font-size: 21px; line-height: 1.45;"><span><strong>Café drinks and snacks</strong></span><strong style="color: #10366F; white-space: nowrap;">24 hours</strong></li>
+        </ul>
+
+        <ul style="display: grid; gap: 18px; margin-top: 32px;">
+          <li style="display: flex; gap: 16px; align-items: flex-start; font-size: 21px; line-height: 1.5;"><span aria-hidden="true" style="flex: none; color: #2C7A4B; font-size: 26px; line-height: 1.2;">✓</span><span><strong>Patio dining.</strong> Throughout the summer months.</span></li>
+          <li style="display: flex; gap: 16px; align-items: flex-start; font-size: 21px; line-height: 1.5;"><span aria-hidden="true" style="flex: none; color: #2C7A4B; font-size: 26px; line-height: 1.2;">✓</span><span><strong>Guests.</strong> Always welcome to join for dinner.</span></li>
+          <li style="display: flex; gap: 16px; align-items: flex-start; font-size: 21px; line-height: 1.5;"><span aria-hidden="true" style="flex: none; color: #2C7A4B; font-size: 26px; line-height: 1.2;">✓</span><span><strong>Private dining.</strong> Available for family celebrations.</span></li>
+        </ul>
+      </div>
+
+      <div style="display: grid; gap: 18px;">
+        <img src="https://static.wixstatic.com/media/4d96be_4b18e48410c6449d9316b362cd27956e~mv2.jpg/v1/fill/w_1200,h_800,q_90/4d96be_4b18e48410c6449d9316b362cd27956e~mv2.jpg" alt="The Craft Kitchen" style="width: 100%; height: 300px; object-fit: cover; border-radius: 6px;">
+        <img src="https://static.wixstatic.com/media/4d96be_19274bea1c6f48868f7aa8652f0b8c7f~mv2.jpg/v1/fill/w_1200,h_800,q_90/4d96be_19274bea1c6f48868f7aa8652f0b8c7f~mv2.jpg" alt="The Pub" style="width: 100%; height: 300px; object-fit: cover; border-radius: 6px;">
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" data-reveal="1" class="gc-sec" style="background: #FFFDF9; border-top: 2px solid #EFE4D4;">
+    <div class="gc-wrap">
+      <div style="max-width: 820px;">
+        <span style="display: block; font-size: 19px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #9C4A2E;">Menu</span>
+        <h2 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(38px, 4.2vw, 58px); line-height: 1.08; margin-top: 16px; color: #17263D; text-wrap: balance;">Sample menu</h2>
+        <p style="margin-top: 20px; font-size: 24px; line-height: 1.55; color: #443A30;">A full menu at lunch and dinner, with daily features.</p>
+      </div>
+
+      <div role="tablist" aria-label="Choose lunch or dinner" style="display: flex; gap: 18px; margin-top: 40px; flex-wrap: wrap;">
+        <sc-for list="{{ meals }}" as="m" hint-placeholder-count="2">
+          <button type="button" role="tab" aria-selected="{{ m.selected }}" onClick="{{ m.select }}" style="{{ m.btnStyle }}">{{ m.label }}</button>
+        </sc-for>
+      </div>
+
+      <div style="display: flex; align-items: baseline; gap: 16px 26px; flex-wrap: wrap; margin-top: 34px;">
+        <h3 style="font-family: 'Newsreader', serif; font-weight: 500; font-size: 32px; line-height: 1.15; color: #17263D;">{{ activeMeal }}</h3>
+        <span style="font-size: 21px; font-weight: 800; color: #10366F;">Served {{ activeTime }}</span>
+      </div>
+
+      <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 18px; margin-top: 24px;">
+        <sc-for list="{{ courses }}" as="c" hint-placeholder-count="3">
+          <li style="background: #FCF8F2; border: 2px solid #E5D8C4; border-radius: 6px; padding: 32px 30px;">
+            <span style="display: block; font-size: 19px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #9C4A2E;">{{ c.name }}</span>
+            <ul style="display: grid; gap: 22px; margin-top: 22px;">
+              <sc-for list="{{ c.items }}" as="dish" hint-placeholder-count="4">
+                <li>
+                  <strong style="display: block; font-family: 'Newsreader', serif; font-weight: 500; font-size: 24px; line-height: 1.25; color: #17263D;">{{ dish.name }}</strong>
+                  <sc-if value="{{ dish.desc }}">
+                    <span style="display: block; margin-top: 8px; font-size: 20px; line-height: 1.5; color: #514538;">{{ dish.desc }}</span>
+                  </sc-if>
+                </li>
+              </sc-for>
+            </ul>
+          </li>
+        </sc-for>
+      </ul>
+
+      <p style="margin-top: 28px; font-size: 19px; line-height: 1.5; color: #5A4E42;">Menus change with the seasons.</p>
+    </div>
+  </section>
+
+  <section class="gc-sec" style="background: #F5EBDD;">
+    <div class="gc-wrap" style="text-align: center; max-width: 820px;">
+      <h2 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(34px, 3.8vw, 52px); line-height: 1.1; color: #17263D;">Arrange a private visit</h2>
+      <p style="margin-top: 18px; font-size: 24px; line-height: 1.55; color: #443A30;">Private visits are available daily from 9 a.m. to 6 p.m.</p>
+      <div style="display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin-top: 34px;">
+        <a href="tel:2894800125" style="background: #10366F; color: #FFF8EF; padding: 21px 36px; border-radius: 999px; font-weight: 800; font-size: 21px;" style-hover="background: #0B2650; color: #FFF8EF;">Call 289·480·0125</a>
+        <a href="/location#contact" style="background: #9C4A2E; color: #FFF8EF; padding: 21px 36px; border-radius: 999px; font-weight: 800; font-size: 21px;" style-hover="background: #82381F; color: #FFF8EF;">Arrange a private visit</a>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;enableReveal&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    if (this.props.enableReveal === false) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!('IntersectionObserver' in window)) return;
+    const nodes = Array.from(document.querySelectorAll('[data-reveal]'));
+    const show = n => { n.style.opacity = '1'; n.style.transform = 'none'; };
+    nodes.forEach(n => {
+      n.style.transition = 'opacity 800ms ease, transform 800ms cubic-bezier(0.22,1,0.36,1)';
+      const r = n.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) return;
+      n.style.opacity = '0';
+      n.style.transform = 'translateY(26px)';
+    });
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+    }, { threshold: 0 });
+    nodes.forEach(n => io.observe(n));
+    this._io = io;
+    this._check = () => {
+      let pending = 0;
+      nodes.forEach(n => {
+        if (n.style.opacity !== '0') return;
+        const r = n.getBoundingClientRect();
+        if (r.top < window.innerHeight * 0.95 && r.bottom > 0) show(n); else pending++;
+      });
+      if (!pending) this._teardown();
+    };
+    window.addEventListener('scroll', this._check, { passive: true });
+    window.addEventListener('resize', this._check);
+    this._check();
+    this._safety = setTimeout(this._check, 600);
+  }
+
+  _teardown() {
+    if (this._io) { this._io.disconnect(); this._io = null; }
+    if (this._check) { window.removeEventListener('scroll', this._check); window.removeEventListener('resize', this._check); }
+    if (this._safety) clearTimeout(this._safety);
+  }
+  componentWillUnmount() { this._teardown(); }
+
+  state = { meal: 0 };
+
+  static MEALS = [
+    {
+      label: 'Lunch',
+      time: '11:45 a.m. to 1:15 p.m.',
+      courses: [
+        { name: 'To begin', items: [
+          ['“Wedge” salad', 'Iceberg · bacon · tomato · buttermilk ranch · puffed quinoa'],
+          ['Welland-grown baby lettuce', 'Cucumber · tomato · lemon vinaigrette'],
+          ['Tomato & watermelon salad', 'Feta · balsamic glaze'],
+        ]},
+        { name: 'The mains', items: [
+          ['Cottage cheese & fruit', 'Lactose free · honey · croissant'],
+          ['Egg salad on multigrain', ''],
+          ['Grilled cheese on sourdough', ''],
+          ['Carved turkey or deli ham', 'Lettuce · tomato · croissant'],
+          ['Eggs, your way', 'Omelette · fried egg sandwich · scrambled with bacon'],
+        ]},
+        { name: 'To finish', items: [
+          ['Ice cream or chocolate pudding', 'Cream & M&M’s'],
+          ['Peach yogurt parfait', 'Blueberry · granola'],
+          ['Bundt cake', ''],
+          ['Cheese plate', 'Cheddar · Quebec brie · honey · crackers'],
+        ]},
+      ],
+    },
+    {
+      label: 'Dinner',
+      time: '4:45 p.m. to 6:15 p.m.',
+      courses: [
+        { name: 'To begin', items: [
+          ['“Wedge” salad', 'Iceberg · bacon · tomato · buttermilk ranch · puffed quinoa'],
+          ['Welland-grown baby lettuce', 'Cucumber · tomato · lemon vinaigrette'],
+          ['Tomato & watermelon salad', 'Feta · balsamic glaze'],
+        ]},
+        { name: 'The mains', items: [
+          ['6oz grilled sirloin steak', 'Cooked to preference'],
+          ['Steamed Atlantic salmon', 'Olive oil · red wine crunchy salt'],
+          ['Grilled chicken breast', 'Fresh lemon'],
+          ['Corkscrew pasta', 'Red sauce · roasted peppers · spinach'],
+          ['Egg salad or a BLTC', 'Bacon · lettuce · tomato · cheese'],
+          ['Seasonal sides', 'Spinach · carrots · cauliflower · roasted peppers · russet mash · pickled beets · fried onions'],
+        ]},
+        { name: 'To finish', items: [
+          ['Ice cream or chocolate pudding', 'Cream & M&M’s'],
+          ['Peach yogurt parfait', 'Blueberry · granola'],
+          ['Selection of bundt cakes', ''],
+        ]},
+      ],
+    },
+  ];
+
+  _btn(active) {
+    return [
+      'min-height: 62px; padding: 18px 44px; cursor: pointer;',
+      'border-radius: 999px; font-size: 21px; font-weight: 800; line-height: 1.2;',
+      'transition: background 200ms ease, color 200ms ease;',
+      active
+        ? 'background: #10366F; color: #FFF8EF; border: 3px solid #10366F;'
+        : 'background: #FFFDF9; color: #17263D; border: 3px solid #E5D8C4;',
+    ].join(' ');
+  }
+
+  renderVals() {
+    const active = Component.MEALS[this.state.meal];
+    return {
+      meals: Component.MEALS.map((m, i) => ({
+        label: m.label,
+        selected: i === this.state.meal ? 'true' : 'false',
+        btnStyle: this._btn(i === this.state.meal),
+        select: () => this.setState({ meal: i }),
+      })),
+      activeMeal: active.label,
+      activeTime: active.time,
+      courses: active.courses.map(c => ({
+        name: c.name,
+        items: c.items.map(([name, desc]) => ({ name, desc })),
+      })),
+    };
+  }
+}
+</script>
+</body>
+</html>
