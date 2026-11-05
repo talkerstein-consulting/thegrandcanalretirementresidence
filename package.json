@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "capture": "node tools/capture.mjs",
-    "build": "node tools/build.mjs && node tools/build-clean.mjs && node tools/build-v3.mjs && node tools/build-v4.mjs",
-    "build:clean": "node tools/build-clean.mjs && node tools/build-v3.mjs && node tools/build-v4.mjs",
+    "build": "node tools/build.mjs && node tools/build-clean.mjs && node tools/build-v3.mjs",
+    "build:clean": "node tools/build-clean.mjs && node tools/build-v3.mjs",
     "serve": "node tools/serve.mjs",
     "check": "node tools/check.mjs",
     "test": "node tools/test-interactions.mjs"
