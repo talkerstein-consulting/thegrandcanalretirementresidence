@@ -77,6 +77,7 @@ body{padding-bottom:48px!important}
     <a href="/"${active === 'redesign' ? ' aria-current="page"' : ''}>Redesign</a>
     <a href="/v2"${active === 'v2' ? ' aria-current="page"' : ''}>V2</a>
     <a href="/v3"${active === 'v3' ? ' aria-current="page"' : ''}>V3</a>
+    <a href="/v4"${active === 'v4' ? ' aria-current="page"' : ''}>V4</a>
   </span>
 </nav>
 `;
